@@ -2,8 +2,9 @@
 
 Since the US2066/SSD1311 OLED screen is too large, expensive, and difficult to purchase, I instead use a CW32L012 MCU as an intermediate converter. It translates the US2066/SSD1311 text-only I²C commands into character bitmaps and sends them to an SSD1306 display. This allows the cheaper, smaller, and widely available SSD1306 to replace the US2066/SSD1311 for text output.
 
-Note: ONLY tested with OSSC Pro (Firmware Version 0.77). Other applications or version are UNTESTED.
+Note: ONLY tested with **OSSC Pro (Firmware Version 0.77)**. All other applications or firmware versions are **UNTESTED**.
 
+Source code is pending. Currently, the CPU handles data transfer, so it must run at 48MHz to avoid losing data from the US2066. I plan to change to a DMA function. When it's done, I will open firmware source.
 
 ![Test_on_OSSC_Pro(FW_0.77).jpg](Test_on_OSSC_Pro(FW_0.77).jpg)
 
